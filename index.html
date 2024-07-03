@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./images/Group.svg">
+    <title>Carshipment</title>
+</head>
+<body>
+    <header data-aos="fade-down" class="site-header">
+        <div class="container">
+            <div  class="header">
+                <a class="header__logo-link" href="/">
+                    <img src="./images/logo.svg" alt="logo img" width="245" height="43">
+                </a>
+                <div class="header__content-links">
+                    <ul class="header__list navbar">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Home</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Services</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">About us</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Shipping Methods</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <a class="navbar__phone-link" href="tel:2242182949">
+                        <img src="./images/tel.svg" alt="tel img" width="40" height="38">
+                        <span class="header__phone">224-218-2949</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero">'
+                    <form data-aos="fade-right" class="hero__form" action="https://echo.htmlacademy.ru" method="post">
+                        <h1 class="hero__title">Shipping Cost Calculator</h1>
+                        <p class="hero__text">Get your estimate quote in seconds</p>
+                        <hr>
+                        <ul class="hero__list">
+                            <li class="hero__item">
+                                <label class="hero__label" >
+                                    <p class="hero__label-text">Form</p>
+                                    <input class="hero__input" type="number" name="select zip code or location" placeholder="Select ZIP code or location" required aria-label="Select ZIP code or location">
+                                </label>
+                            </li>
+                            <li class="hero__item">
+                                <label class="hero__label">
+                                    <p class="hero__label-text">To</p>
+                                    <input class="hero__input" type="number" name="select zip code or location" placeholder="Select ZIP code or location" required aria-label="Select ZIP code or location">
+                                </label>
+                            </li>
+                            <li class="hero__item">
+                                <label class="hero__label">
+                                    <p class="hero__label-text">Estimate time</p>
+                                    <input class="hero__input-two" type="time" name="select estimate time" placeholder="Select estimate time" required aria-label="Select estimate time">
+                                </label>
+                            </li>
+                        </ul>
+                        <p class="hero__label-text-two">Transport type</p>
+                        <div class="hero__content-wrapper">
+                            <label class="hero__content-label">
+                                <input class="hero__content-one" type="radio" name="gender" placeholder="Open" required aria-label="Open">
+                                Open
+                            </label>
+                            <label class="hero__content-label-two">
+                                <input class="hero__content-one" type="radio" name="gender" placeholder="Enclosed" required aria-label="Enclosed">
+                                Enclosed
+                            </label>
+                        </div>
+                        <hr>
+                        <button class="hero__btn">Get Shipment estimate</button>
+                    </form>
+                    <div data-aos="fade-up"
+                    data-aos-duration="3000" class="hero__content">
+                        <div class="hero__img-content">
+                            <img class="hero__img" src="./images/Vector.svg" alt="Vectror" width="24" height="24">
+                            <p class="hero__subtext">WORLD TOP RATED SHIPPING COMPANY</p>
+                        </div>
+                        <h2 class="hero__subtitle">TRANSPORTATION SERVICES THAT YOU CAN TRUST</h2>
+                        <p class="hero__subtext-two">Transport your vehicle with PROs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
