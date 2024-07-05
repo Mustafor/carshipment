@@ -1,0 +1,69 @@
+
+.wherepro-section {
+    padding: 65px 65px 165px 165px;
+    background-image: url("./../images/Background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wherepro {    
+    display: flex;
+    align-items: center;
+}
+
+.wherepro__title {
+    width: 347px;
+    color: $white-color;
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.wherepro__text {
+    width: 347px;
+    color: $white-color;
+    width: 330px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+.wherepro__list{
+    display: flex;
+    gap: 60px;
+    margin-left: 103px;
+}
+
+.wherepro__input {
+    margin-left: 30px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px; 
+}
+
+.wherepro__item-strong {
+    margin-bottom: 15px;
+    color: $white-color;
+    text-align: center;
+}
+
+.wherepro__strong {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60.51px;
+}
+
+.wherepro__item-span {
+    color: $white-color;
+}
+
+.wherepro__span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+
+

@@ -1,0 +1,114 @@
+
+.servise-section {
+    padding: 118px 0 173px;
+    background-image: url("./../images/service.png") , url("./../images/service2.png");
+    background-repeat: no-repeat;
+    background-position: top left , bottom right;
+}
+
+.service__content {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.service__title {
+    margin-bottom: 8px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+}
+
+.service__text {
+    color: $black-2-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service__item {
+    margin-bottom: 25px;
+    position: relative;
+    width: 354px;
+    height: 458px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover > .service__img{
+        height: 50%;
+    }
+    &:hover > .service__hide-content{
+        bottom: 0;
+    }
+    &:hover > .service__view-content{
+        bottom: -100%;
+    }
+}
+
+.service__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 4;
+    transition: all 0.3s ease-out;
+}
+
+.service__view-content {
+    padding: 20px 20px 20px;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+}
+
+.service__subtitle {
+    margin-bottom: 15px;
+    color: $white-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+}
+
+.service__item-link {
+    color: $white-color;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.15px;
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+
+.service__hide-content {
+    position: absolute;
+    height: 50%;
+    bottom: -100%;
+    padding: 20px;
+    background-color: $white-color;
+    z-index: 5;
+    transition: all 0.3s ease-out;
+    border: 2px solid $black-color;
+}
+.service__hide-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    color: $black-color;
+}
+.service__hide-text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $black-2-color;
+}
+.service__hide-link {
+    color: $orange-color;
+}
+

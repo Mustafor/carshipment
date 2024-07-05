@@ -1,0 +1,69 @@
+.about-us-section{
+    padding-bottom: 96px;
+}
+
+.about-us{
+    gap: 25px;
+    display: flex;
+}
+
+.about-us__wrapper{
+    margin-top: 100px;
+    width: 542px;
+}
+
+.about-us-title {
+    margin-bottom: 16px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    color: $black-color;
+}
+
+.about-us__span{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    color: $orange-color;
+}
+
+.about-us-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $black-2-color;
+}
+
+.our-mission {
+    gap: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.our-mission__wrappeer{
+    margin-top: 50px;
+    width: 542px;
+    margin-right: 50px;
+}
+
+.our-mission-subtitle {
+    margin-bottom: 16px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    color: $black-color; 
+}
+
+.our-mission-span {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    color: $orange-color;
+}
+
+.our-mission-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
