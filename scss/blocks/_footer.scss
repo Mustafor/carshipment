@@ -1,0 +1,96 @@
+.site-footer {
+    padding: 50px 0;
+    background-color: #282828;
+  }
+  
+  .footer {
+    display: flex;
+  }
+  
+  .optimum__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    margin-top: 16px;
+    color: white;
+  }
+  
+  .service__footer{
+    margin-left: 121px;
+  }
+  
+  .service__strong {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: white;
+  }
+  
+  .service__link {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    color: rgb(103, 101, 101);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+    &:hover{
+      color: orange;
+    }
+  }
+  
+  .shipping__footer{
+    margin-left: 110px;
+  }
+  
+  .shipping__strong {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: white;
+  }
+  
+  .shipping__link{
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    color: rgb(103, 101, 101);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  
+    &:hover{
+      color: orange;
+    }
+  }
+  
+  .about-us__footer{
+    margin-left: 110px;
+  }
+  
+  .about__strong {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: white;
+  }
+  
+  .about__link {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    color: rgb(103, 101, 101);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    
+  
+    &:hover{
+      color: orange;
+    }
+  }

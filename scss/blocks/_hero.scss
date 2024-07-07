@@ -9,8 +9,7 @@
 }
 
 .hero {
-    display: flex;
-    justify-content: space-between;
+    @include display($items:start , $spase:space-between , $gap:0px);
 }
 
 .hero__form {
@@ -18,40 +17,25 @@
     width: 449px;
     padding: 25px;
     background-color: #3A3A3A80;
+    backdrop-filter: blur(5px);
 }
 
 .hero__title {
-    margin-bottom: 8px;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36.31px;
-    color: $white-color;
+    @include textStyle ($MB:8px , $FS:30px , $FW:700 , $CLR:$white-color , $LH:36.31px , $CASE:capitalize);
 }
 
 .hero__text {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    color: $white-color;
+    @include textStyle ($MB:20px , $FS:16px , $FW:400 , $CLR:$white-color , $LH:19.36px , $CASE:capitalize);
 }
 
 .hero__label-text{
-    color: $white-color;
-    margin-bottom: 8px;
+    @include textStyle ($MB:8px , $FS:16px , $FW:400 , $CLR:$white-color , $LH:19.36px , $CASE:capitalize);
     margin-top: 25px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18.15px;
 }
 
 .hero__label-text-two{    
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18.15px;
-    color: $white-color;
+    @include textStyle ($MB:8px , $FS:16px , $FW:400 , $CLR:$white-color , $LH:19.36px , $CASE:capitalize);
     margin-top: 15px;
-    margin-bottom: 8px;
 }
 
 .hero__input {
@@ -77,9 +61,7 @@
 }
 
 .hero__content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display($items:center , $spase:cspace-between);
     margin-bottom: 18px;
 }
 
@@ -87,9 +69,7 @@
     padding: 15px 60px;
     border-radius: 12px;
     background-color: $white-color;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20.57px;
+    @include textStyle ($MB:0px , $FS:17px , $FW:400 , $CLR:$white-color , $LH:20.57px , $CASE:capitalize);
 }
 
 .hero__content-label-two{
@@ -97,9 +77,7 @@
     padding: 15px 50px;
     border-radius: 12px;
     background-color: $white-color;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20.57px;
+    @include textStyle ($MB:0px , $FS:17px , $FW:400 , $CLR:$white-color , $LH:20.57px , $CASE:capitalize);
 }
 
 .hero__content-one{
@@ -107,21 +85,12 @@
 }
 
 .hero__btn{
-    margin-top: 20px;
-    width: 399px;
-    border: none;
-    background-color: $orange-color;
-    padding: 20px 34px 20px 34px;
-    border-radius: 8px;
-    color: $white-color;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 20.57px;
+    @include buttonStyle ($BTN_W:100% , $BTN_PY:17px , $BTN_BG_CLR:$orange-color , $BTN_BR_Radius:8px , $BTN_Border_CLR:transparent , $BTN_FS:17px , $BTN_FW:500 , $BTN_LH:20.57px , $BTN_CLR:$black-color);
     transition: all 0.3s linear;
 
     &:hover{
-        color: $orange-color;
-        background-color: transparent;
+        @include buttonStyle ($BTN_W:100% , $BTN_PY:17px , $BTN_BG_CLR:$orange-color , $BTN_BR_Radius:8px , $BTN_Border_CLR:transparent , $BTN_FS:17px , $BTN_FW:500 , $BTN_LH:20.57px , $BTN_CLR:$black-color);
+        box-shadow: 0 0 5px 0 $orange-color;
     }
 }
 
@@ -131,31 +100,20 @@
 }
 
 .hero__img-content {
-    display: flex;
-    align-items: center;
+    @include display ($items:center , $spase:none , $gap:0px);
     margin-top: 43px;
     margin-bottom: 15px;
 }
 
 .hero__subtext {
     margin-left: 3px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.94px;
-    color: $white-color;
+    @include textStyle ($MB:0px , $FS:14px , $FW:500 , $CLR:$white-color , $LH:20.57px , $CASE:capitalize);
 }
 
 .hero__subtitle {
-    color: $white-color;
-    margin-bottom: 20px;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 67.77px;
+    @include textStyle ($MB:20px , $FS:56px , $FW:700 , $CLR:$white-color , $LH:20.57px , $CASE:capitalize);
 }
 
 .hero__subtext-two {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.2px;
-    color: $white-color;
+    @include textStyle ($MB:0px , $FS:20px , $FW:400 , $CLR:$white-color , $LH:24.57px , $CASE:capitalize);
 }

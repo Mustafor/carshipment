@@ -8,9 +8,7 @@
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display($items:center , $spase:space-between , $gap:0px)
 }
 
 .header__logo-link {
@@ -18,26 +16,17 @@
 }
 
 .header__content-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    @include display($items:center , $spase:space-between , $gap:50px)
 }
 
 .header__list {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-
+    @include display($items:center , $spase:start , $gap:25px)
 }
 
 .navbar__link {
-   color: $white-color;
-   font-size: 16px;
-   font-weight: 500;
-   line-height: 19.36px;
-   text-transform: uppercase;
-   transition: all 0.3s linear;
+    @include textStyle($MB:0px , $FS:16px , $FW:500 , $CLR:$white-color , $LH:19.36px , $CASE:uppercase);
+    transition: all 0.3s linear;
+    
 
    &:hover{
     color: $orange-color;
@@ -49,17 +38,12 @@
 }
 
 .navbar__phone-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include display($items:center,$spase:start,$gap:10px)
 }
 
 .header__phone {
-    color: $white-color;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
-    transition: all 0.3s linear;
+    @include textStyle($MB:0px , $FS:16px , $FW:500 , $CLR:$white-color , $LH:19.36px , $CASE:uppercase);
+    transition: all 0.3s ease;
 
     &:hover{
         color: $orange-color;
